@@ -11,7 +11,9 @@ export class BindingPropertiesComponent {
     alt: 'light house',
   };
 
-  log() {
-    console.log('you clicked me!');
+  isHidden: boolean = false;
+
+  toggle(): void {
+    this.isHidden = !this.isHidden;
   }
 }

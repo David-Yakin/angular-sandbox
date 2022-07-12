@@ -1,7 +1,27 @@
-<h1>binding properties</h1>
-<hr />
-<div class="container">
-  <img [src]="image.url" [alt]="image.alt" [title]="image.alt" />
+<div>
+  <h1 class="text-center">Two-way binding</h1>
+  <h2>please describe the photo</h2>
+  <hr />
 </div>
 
-<button class="btn btn-success" (click)="log()">Click</button>
+<button (click)="toggle()" class="btn btn-primary">
+  {{ isHidden ? "Reveal Image" : "Hide Image" }}
+</button>
+
+<div class="col-12 col-md-6 col-xl-4">
+  <form>
+    <label for="text">Enter Text</label>
+    <input
+      class="form-control"
+      id="text"
+      type="text"
+      placeholder="Enter Text"
+      [(ngModel)]="image.alt"
+      name="text-field"
+    />
+  </form>
+  <figure [hidden]="isHidden">
+    <img [src]="image.url" [alt]="image.alt" style="width: 100%" />
+    <figcaption>{{ image.alt }}</figcaption>
+  </figure>
+</div>

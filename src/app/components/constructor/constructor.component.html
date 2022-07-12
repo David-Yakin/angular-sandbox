@@ -1,0 +1,21 @@
+<div class="center">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="center mt-4">
+  <div class="col-12 col-md-4">
+    <div class="text-center">counter: {{ counter }}</div>
+  </div>
+</div>
+
+<div class="center">
+  <div class="my-2 alert-info rounded p-2">
+    <button class="btn btn-primary m-2" (click)="reset()">Reset</button>
+    <button class="btn btn-danger m-2" (click)="handleCounter('stop')">
+      Stop
+    </button>
+    <button class="btn btn-success m-2" (click)="handleCounter('continue')">
+      {{ counter === 0 ? "Start" : "Continue" }}
+    </button>
+  </div>
+</div>
