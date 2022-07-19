@@ -1,0 +1,20 @@
+<!-- <p class="red" style="color: green">styles works!</p>
+<p [ngStyle]="{ color: 'blue', 'background-color': balck }">
+  styles steel works!
+</p>
+<hr /> -->
+<!-- <div [ngClass]="isRed ? 'red cursor' : 'green'" (click)="toggle()" dir="rtl">
+  Click
+</div> -->
+
+<div
+  [ngClass]="isBlue ? 'blue center' : 'red center'"
+  style="min-height: 500px"
+>
+  <button
+    [ngClass]="isBlue ? 'btn btn-danger' : 'btn btn-primary'"
+    (click)="toggle()"
+  >
+    {{ isBlue ? "Be Happy!" : "Be sad!" }}
+  </button>
+</div>

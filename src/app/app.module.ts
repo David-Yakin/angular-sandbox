@@ -6,6 +6,8 @@ import { StringInterpolationComponent } from './components/string-interpolation/
 import { BindingPropertiesComponent } from './components/binding-properties/binding-properties.component';
 import { FormsModule } from '@angular/forms';
 import { ConstructorComponent } from './components/constructor/constructor.component';
+import { StylesComponent } from './components/styles/styles.component';
+import { DecoratorsComponent } from './components/decorators/decorators.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ConstructorComponent } from './components/constructor/constructor.compo
     StringInterpolationComponent,
     BindingPropertiesComponent,
     ConstructorComponent,
+    StylesComponent,
+    DecoratorsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
