@@ -1,0 +1,18 @@
+<div class="center mt-4">
+  <div class="col-12 col-md-4 alert-info rounded">
+    <div class="text-center">counter: {{ counter }}</div>
+    <div class="center">
+      <div class="my-2">
+        <button class="btn btn-success m-2" (click)="setCounter('increment')">
+          Increment
+        </button>
+        <button class="btn btn-danger m-2" (click)="setCounter('decrement')">
+          Decrement
+        </button>
+        <button class="btn btn-primary m-2" (click)="setCounter('reset')">
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
